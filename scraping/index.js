@@ -14,6 +14,11 @@ rp(allproblems_json)
         question_names.push(item['stat']['question__title'].replace(/[^a-zA-Z]/g, ''));
     })
 
+    fs.mkdirSync('../src/main/java/leetcode', { recursive: true }, (err) => {
+        console.log('Create directory...')
+        if (err) throw err;
+    });
+
     console.log("Begin to write into files...");
     question_names.map(function(name){
 
