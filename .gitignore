@@ -92,5 +92,6 @@ fabric.properties
 
 # End of https://www.gitignore.io/api/intellij
 
+target
 
 scraping/node_modules
